@@ -23,7 +23,51 @@
 
 <body>
 
-    <!-- Your html here -->
+    <main class="gradientbackground">
+
+        <div class="card">
+            <header class="cardheader">
+                <img src="images/bg-heading-03.jpg" alt="Card Header">
+            </header>
+
+            <div class="cardbody">
+                <h2 class="cardtitle">Registration Info</h2>
+                <form action="" class="cardform">
+                    <div class="formfield">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="formfield">
+                        <input type="date" 
+                        placeholder="Birthday"
+                        onfocus="(this.type='date')"
+                        onblur="(this.type='text')"
+                        required>
+                    </div>
+                    <div class="selectfield formfield">
+                        <select name="experience" id="experience" required>
+                            <option value="experience" selected disabled>Experience</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+
+                        </select>
+                    </div>
+                    <div class="formfield">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="formfield">
+                        <input type="phone" placeholder="Phone (Optional)">
+                    </div>
+                    <button class="submitbutton" type="submit">Submit</button>
+                </form>
+            </div>
+
+
+    </div>
+
+    </main>
+    
+
 </body>
 
 </html>

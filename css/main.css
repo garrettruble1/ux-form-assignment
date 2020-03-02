@@ -1,2 +1,147 @@
 
 /*  Put your CSS Here */
+
+.gradientbackground {
+    background: -webkit-gradient(
+        linear, 
+        left bottom, 
+        left top, 
+        from(#fbc2eb), 
+        to(#a18cd1));
+background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+
+.card {
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    overflow: hidden ;
+}
+
+.cardbody {
+    padding: 1.2rem;
+}
+
+.cardheader {
+    height: 18rem;
+}
+
+.cardheader > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardtitle {
+    font-size: 1.5rem;
+}
+
+.formfield {
+    margin-bottom: 1rem;
+    border-bottom: solid 1px rgb(100, 100, 100);
+}
+
+.formfield > input, 
+.formfield > select {
+    width: 100%;
+    height: 2.5rem;
+
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+.formfield > input::placeholder, 
+.formfield > select::placeholder,
+.formfield > select:disabled {
+    color: #ccc;
+
+}
+
+.selectfield {
+    position: relative;
+    
+}
+
+.selectfield::after {
+    content: "▼";
+    position: absolute;
+    right: 0.5rem;
+    top: 0.4rem;
+    font-size: 0.7rem;
+}
+
+.submitbutton {
+    margin: 20px 0;
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(37, 182, 18);
+    color: white;
+    border-radius: 1rem;
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  @media only screen and (min-width: 787px) {
+
+    .card {
+        display: flex;
+        max-width: 650px;
+    }
+
+    .cardheader,
+    .cardbody {
+        width: 50%;
+    }
+
+    .cardheader {
+        min-height: 35rem;
+    }
+
+    .cardtitle {
+        font-size: 1.8rem;
+    }
+
+    .formfield {
+        margin: 1rem;
+        border-bottom: solid 1px rgb(100, 100, 100);
+    }
+
+    .formfield > input, 
+    .formfield > select {
+    width: 100%;
+    height: 2.5rem;
+    margin: 5px 10px;
+
+    background-color: black;
+    color: white;
+    }
+
+    .submitbutton {
+        margin: 1rem;
+        width: 6rem;
+        height: 2rem;
+        background-color: rgb(37, 182, 18);
+        color: white;
+        border-radius: 1rem;
+        font-family: 'Poppins';
+        font-size: 0.9rem;
+    }
+
+  }
